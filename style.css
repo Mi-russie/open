@@ -1,0 +1,530 @@
+* {
+    box-sizing: border-box; 
+}
+.row {
+    display: flex;
+  }
+  
+
+*{
+    margin-left: 0px;
+    margin-right: 0px; 
+    padding-left: 0px; 
+    padding-right: 0px;
+}
+
+
+@font-face {
+    font-family: "Raleway-Regular" sans-serif; 
+    src: url(Raleway-Regular.ttf);
+}
+#main_wrapper{
+    font-size: normal ; 
+    color: black;
+    width: 100%;
+}
+
+/*------------------------------débtut css header------------------*/
+
+#header{
+    display: flex; 
+    justify-content: space-between; 
+    height: 50px; 
+    margin-bottom: 50px;
+}
+
+/*--------------------------*/
+#header img{
+    padding-left: 20px; 
+}
+
+/*-------------------------*/
+
+header nav{
+    width: 25%;
+}
+
+header ul{
+    width: 100%;
+    display: flex;
+}
+
+header li{
+ list-style-type: none;
+ width: 50%;
+ text-align: center;
+}
+
+.a2, .a1{
+     text-align: center;
+    }
+
+
+#header a{
+    text-decoration: none; color: black;
+}
+
+#header a:hover{
+    text-decoration: overline; color:#0065FC;
+}
+
+/*------------------------------fin css header-----------------------------------------------*/
+/*--------------CSS SLOGAN--------------*/
+
+#slogan{
+    padding-left: 20px; margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+#slogan h1{
+    font-size: 20px; font-weight: bold; width: 50%;
+}
+
+#slogan p{
+    font-size: 15px; font-weight: lighter; width: 50%;
+}
+
+/*-----------------------search-----------------------------------------*/
+.search{
+    display: flex;
+}
+
+form label span {  background-color: #F2F2F2;
+    border-radius: 35% 0 0 35%; 
+    padding-left: 12px; padding-right: 12px; padding-top: 12px; padding-bottom: 12px;
+    margin-right: -5px;
+    margin-left: 20px; 
+}
+
+form input{
+    height: 40px; border: 1px solid #F2F2F2;
+}
+
+form input+input{ 
+    background-color: #0065FC; color: white; font-weight: bold; 
+    border: 1px solid #0065FC; border-radius: 0 10px 10px 0;
+    height: 100%; 
+    padding-left: 5px; padding-right: 5px; padding-top: 5px; padding-bottom: 5px;
+    margin-left: -5px;
+    cursor: pointer;
+ }
+
+
+  form button { display: none; 
+    background-color: #0065FC; color: white; font-weight: bold; 
+    border: 1px solid #0065FC; border-radius: 10px 10px 10px 10px;
+    padding-left: 9px; padding-right: 9px; padding-top: 5px; padding-bottom: 5px;
+    height: 100%; margin-left: -5px; 
+ }
+
+
+/*--------------filtre-------------------------------*/
+
+
+#filtres { 
+    display: flex; 
+    flex-wrap: wrap; 
+    margin-top: 50px; 
+    align-items: flex-start;
+}
+
+#filtres h3{ 
+    font-weight: bold; 
+    font-size: 18px; 
+    padding-top: 5px;
+    padding-left: 20px; 
+    /*width: 100%;*/
+}
+
+
+#filtres li{ 
+    display: inline-flex;
+    list-style-type: none;
+    margin-bottom: 15px;      
+}
+
+#filtres li span{
+    background-color: #DEEBFF; 
+    color: #0065FC;
+    border-radius: 50% 50% 50% 50%; 
+    border: solid 10px #DEEBFF;
+    margin-left: 20px;
+    z-index: 2;
+}
+
+
+#filtres li button{
+    color: black;
+    background-color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border: 2px solid #F2F2F2;
+    border-radius: 15PX 15PX 15PX 15PX; 
+    height: 40PX; 
+    padding-left: 45px; padding-right: 10px;
+    margin-left: -26px; z-index: 1;
+    cursor: pointer;
+}
+
+#filtres li button:hover{
+    box-shadow: 10px 5px 5px #0065FC;
+}
+
+/*------------------------------------------------*/
+
+#info_nb_logement{ 
+    padding-left: 20px; margin-top: 30px;
+}
+
+#info_nb_logement span{ background-color: white; border-radius: 50% 50% 50% 50%; border: 1px solid #F2F2F2;
+padding-left: 5px; padding-right: 5px; color: #0065FC;
+}
+
+/*-----------------------------------------------------*/
+
+#global{
+    
+    display: flex; flex-wrap: wrap; 
+    justify-content: flex-start;
+    margin-top: 40px; margin-bottom: 40px;
+    padding-left: 20px; padding-right: 20px; 
+    padding-top: 20px; padding-bottom: 20px; /*global padding pour tout les elements enfants*/
+    width: 100%;
+}
+
+
+
+/*-----hébergements articles---------------------*/
+#hébergements{
+   width: 65%; 
+   padding-left: 20px; padding-right: 20px; 
+   padding-top: 20px; padding-bottom: 20px;
+   background-color: #f2f2f2;
+   margin-right: 20px;
+   margin-bottom: 20px;
+   border-radius: 15px 15px 15px 15px;
+}
+
+#hébergements h1{ 
+    font-weight: bold; 
+    color: black; 
+    font-size: 20px; 
+    
+}
+
+#hébergements h2{
+    font-size: 14px; 
+    font-weight: bold;
+    color: black;
+    margin-top: 40px;
+}
+
+
+
+.article{
+    width: 100%;
+    display: flex; flex-wrap: wrap;
+     justify-content: space-between;
+     padding-right: 20px; /* oter pour version mobile*/
+     /*between et pas around pour respecter le padding*/
+}
+
+.article .a{
+    border: 5px solid white;
+    border-radius: 15px 15px 15px 15px;
+    background-color: white;
+    width: 30%;
+    margin-bottom: 20px; 
+    text-decoration: none; 
+    color: black;
+}
+
+.article .card :hover{
+    transform: scale(1.1);
+}
+
+.article img{
+    width: 100%;  height: 130px; display: inline; 
+    margin-right: 20px; 
+    z-index: 1;
+    object-fit: cover;
+    border-radius: 15px 15px 0px 0px;
+    background-color: white;
+}
+
+.article .card_body{
+    padding-left: 10px;
+    z-index: 2;
+}
+
+.article .card_title{
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+   
+}
+
+.article .card_notation{
+    font-weight: lighter;
+    font-size: 12px;
+    
+}
+
+.article .star{
+    padding-left: 10px;
+    color: blue;
+    border-radius: 0 0 15px 15px;
+    font-size: 10px;
+}
+
+.article .card .star span{
+    color: #F2F2F2;
+}
+.article .pac{
+    font-weight: bold;
+}
+.article .euro{
+    font-size: 12px; position: relative; bottom: 2px;
+    font-weight: bold;
+}
+.card_notation .php{
+    position: relative; bottom: 2px; font-size: 12px;
+}
+.card_notation .phm{
+    position: relative; bottom: 2px; font-size: 12px;
+}
+.card_notation .pmer{
+    position: relative; bottom: 2px; font-size: 12px;
+}
+.card_notation .pap{
+    font-weight: bold;
+}
+.card_notation .pha{
+    position: relative; bottom: 2px;
+}
+
+
+/**-------populaire --------------------*/
+#populaires{ width: 33%;
+    background-color: #f2f2f2;
+    border-radius: 15px 15px 15px 15px; 
+    padding-left: 20px; padding-right: 20px; 
+    padding-top: 20px; padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+#populaires h1{ font-weight: bold;
+    font-size: 20px;
+    color: black;    
+}
+
+#populaires h1 span{ 
+    padding-left: 45%;
+    color: black;
+}
+
+/*-------------populaires----------------------------------ok*/
+
+.aside{ width: 100%;
+    padding-right: 20px;
+   display: flex; flex-direction: column;
+}
+
+.aside .a{ text-decoration: none;
+    color: black;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+
+
+.aside .card{ display: flex; flex-direction: row;
+    padding-bottom: 20px;
+}
+.aside .card :hover{
+    transform: scale(1.1);
+}
+
+.aside img {height: 150px;
+    object-fit: cover;
+    width: 45%; /* controle la largeur du cadre de l image de la card*/
+    z-index: 1;
+    border-radius: 15px 0px 0px 15px;
+    border: 5px solid white;
+}
+
+.aside .card_body{ z-index: 2;
+    border-radius: 0 15px 15px 0;
+    width: 50%; /* controle la largeur du cadre texte de la card*/
+    background-color: white;
+}
+
+.aside .card_title{ font-weight: bold;
+    font-size: 18px;
+    color: black;
+    padding-left: 10px;
+   }
+
+.aside .card_notation{ font-weight: lighter;
+    font-size: 12px;
+    color:black;
+    padding-left: 10px;
+}
+
+.aside .star{ color: blue;
+    font-size: 10px;
+    display: flex; flex-direction: row;
+    padding-left: 10px;
+}
+
+.aside .card .star span{ color: #F2F2F2;
+}
+   
+/*-------------activitées----*/
+
+#activite {
+     margin-left: 20px; margin-right: 20px;
+}
+
+
+.activite-list { 
+    display: flex; width: 100%; /* a simple display flex to put all the element inline*/
+    justify-content: space-between;
+    height: 600px;
+}
+
+.activite-list .colonne_simple  {
+    width: 23%;
+    display: flex;
+    /*flex-direction: column;*/ /* for only one elelmet in a simple column i do not need any flexdirection*/
+    justify-content: space-between;
+    border-radius: 15px;
+}
+
+
+.activite-list .colonne_double {
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* make an equal separation between the two elements of double column*/
+    border-radius: 15px;
+}
+
+
+.activite-list .colonne_simple article img {
+    width: 100%;
+    height: calc(100% - 65px);
+    
+    object-fit: cover;
+    border-radius: 15px 15px 0px 0px;
+}
+.activite-list .colonne_double article img {
+    width: 100%;
+    height: calc(100% - 65px);
+    object-fit: cover;
+    border-radius: 15px 15px 0px 0px;
+}
+
+
+.activite-list .colonne_simple article {
+    height: 100%;
+    box-shadow: 0px 0px 10px 0px #E0E0E0;
+    border-radius: 15px;
+}
+.activite-list .colonne_double article {
+    height: 100%;
+    box-shadow: 0px 0px 10px 0px #E0E0E0;
+    border-radius: 15px; /* size borderradius neeed to be the same as img not to see a difference in the angle  (white color)*/
+}
+
+.activite-list .colonne_simple article h3 {
+    padding: 21px;
+    margin: 0px;
+}
+.activite-list .colonne_double article h3 {
+    padding: 21px;
+    margin: 0px;
+}
+
+.activite-list .colonne_double article {
+    height: 48%;
+}
+
+
+.activite-list a{
+    text-decoration: none;
+    color: black; font-size: 16px; font-weight: bold;
+}
+
+.activite-list a :hover{
+    box-shadow: 0px 0px 10px 10px grey;
+}
+
+/*-----*/
+
+footer{
+    display: flex; justify-content: space-between; width: 100%;
+    margin-top: 40px; 
+    background-color: #F2F2F2; 
+}
+
+footer li h3{
+    padding-left: 0px;
+    font-weight: bold; font-size: 18px;
+}
+
+footer li{
+    font-weight: lighter; color: black; list-style-type: none;   
+}
+
+footer a{
+    text-decoration: none; color: black;
+}
+
+footer a:hover{
+    text-decoration: overline; color:#0065FC;
+}
+
+.navigation{
+    width: 33%;
+}
+
+.navigation ul,footer h3
+{
+    padding-left: 20px;
+}
+
+
+footer h3
+{
+    font-weight: bold; font-size: 14px;
+}
+
+footer li
+{
+    font-weight: lighter; color: black; list-style-type: none;   
+}
+
+footer a
+{
+    text-decoration: none; color: black;
+}
+
+footer a:hover
+{
+    text-decoration: none; color:#0065FC;
+}
+
+.navigation
+{
+    width: 100%;
+}
+
+.navigation ul,footer h3
+{
+    padding-left: 20px;
+}
+
+/*-------------------------------------*/
